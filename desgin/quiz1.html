@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>HTML Quiz</title>
+   
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <!-- Internal CSS -->
+   <style>
+      /* General body styling */
+      body {
+         font-family: Arial, sans-serif;
+         margin: 0;
+         padding: 0;
+         background-color: #f9f9f9;
+         color: #333;
+      }
+
+      /* Centered header */
+      header {
+         text-align: center;
+         margin: 40px 0;
+      }
+
+      /* Quiz container styling */
+      section {
+         background-color: #fff;
+         width: 80%;
+         max-width: 600px;
+         margin: 20px auto;
+         padding: 20px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+         border-radius: 8px;
+      }
+
+      h1{
+         text-align: center;
+         color: #333;
+         font-size:xx-large;
+      }
+
+      /* Style for questions */
+      h2 {
+         font-weight:normal;
+         margin-top: 15px;
+         font-size: x-large;
+         
+      }
+      h3{
+        font-size: large;
+        font-weight: lighter;
+      }
+
+      /* Radio button spacing */
+      input[type="radio"] {
+         margin-right: 10px;
+      }
+
+      /* Buttons styling */
+      button {
+         background-color: #4CAF50;
+         color: #fff;
+         border: none;
+         padding: 10px 15px;
+         margin: 10px 5px 0 0;
+         cursor: pointer;
+         border-radius: 5px;
+         font-size: 16px;
+      }
+
+      button:hover {
+         background-color: #45a049;
+      }
+
+      /* Display result */
+      #result {
+         margin-top: 20px;
+         text-align: center;
+         font-size: 18px;
+         font-weight: bold;
+         color: #333;
+      }
+   </style>
+</head>
+<body>
+    
+<header class="header">
+   
+    <section class="flex">
+ 
+       <a href="home.html" class="logo">LearnEase</a>
+ 
+    </section>
+ 
+ </header>  
+
+   
+<div class="side-bar">
+ 
+    <div class="profile">
+       <!--img src="" class="image" alt=""-->
+       <h3 class="name">Name</h3>
+       <p class="role">Student</p>
+       <a href="profile.html" class="btn">view profile</a>
+    </div>
+ 
+    <nav class="navbar">
+       <a href="home.html"><i class="fas fa-home"></i><span>home</span></a>
+       <a href="courses.html"><i class="fas fa-graduation-cap"></i><span>courses</span></a>
+       <a href="quiz.html"><i class="fas fa-pencil-alt"></i><span>Quiz</span></a>
+
+       
+    </nav>
+ 
+ </div>
+
+   <!-- Quiz Section -->
+   <section>
+      <h1>HTML QUIZ</h1>
+      <form id="quiz-form">
+         <!-- Question 1 -->
+         <h2>1. What does HTML stand for?</h2>
+        <h3> <input type="radio" name="q1" value="A"> Hyper Text Markup Language<br>
+         <input type="radio" name="q1" value="B"> Hyperlinks Text Mark Language<br>
+         <input type="radio" name="q1" value="C"> High Tech Modern Language<br></h3>
+
+         <!-- Question 2 -->
+         <h2>2. Which tag is used to create a hyperlink?</h2>
+        <h3> <input type="radio" name="q2" value="A"> &lt;link&gt;<br>
+         <input type="radio" name="q2" value="B"> &lt;a&gt;<br>
+         <input type="radio" name="q2" value="C"> &lt;href&gt;<br></h3>
+
+         <!-- Question 3 -->
+         <h2>3. What is the correct tag for the largest heading?</h2>
+        <h3> <input type="radio" name="q3" value="A"> &lt;h6&gt;<br>
+         <input type="radio" name="q3" value="B"> &lt;h1&gt;<br>
+         <input type="radio" name="q3" value="C"> &lt;header&gt;<br></h3>
+
+         <!-- Question 4 -->
+         <h2>4. Which tag is used for a line break?</h2>
+        <h3> <input type="radio" name="q4" value="A"> &lt;lb&gt;<br>
+         <input type="radio" name="q4" value="B"> &lt;br&gt;<br>
+         <input type="radio" name="q4" value="C"> &lt;break&gt;<br></h3>
+
+         <!-- Question 5 -->
+         <h2>5. Which attribute specifies an image's path?</h2>
+        <h3> <input type="radio" name="q5" value="A"> src<br>
+         <input type="radio" name="q5" value="B"> href<br>
+         <input type="radio" name="q5" value="C"> alt<br></h3>
+
+         <!-- Question 6 -->
+         <h2>6. What tag defines a table row?</h2>
+       <h3>  <input type="radio" name="q6" value="A"> &lt;th&gt;<br>
+         <input type="radio" name="q6" value="B"> &lt;tr&gt;<br>
+         <input type="radio" name="q6" value="C"> &lt;td&gt;<br></h3>
+
+         <!-- Question 7 -->
+        <h2>7. Which tag is used to bold text?</h2>
+        <h3> <input type="radio" name="q7" value="A"> &lt;b&gt;<br>
+         <input type="radio" name="q7" value="B"> &lt;strong&gt;<br>
+         <input type="radio" name="q7" value="C"> Both A and B<br></h3>
+
+         <!-- Question 8 -->
+         <h2>8. What does the &lt;img&gt; tag require?</h2>
+        <h3> <input type="radio" name="q8" value="A"> src<br>
+         <input type="radio" name="q8" value="B"> href<br>
+         <input type="radio" name="q8" value="C"> link<br></h3>
+
+         <!-- Question 9 -->
+         <h2>9. Which is the correct comment syntax in HTML?</h2>
+        <h3> <input type="radio" name="q9" value="A"> // Comment //<br>
+         <input type="radio" name="q9" value="B"> &lt;!-- Comment --&gt;<br>
+         <input type="radio" name="q9" value="C"> /* Comment */<br></h3>
+
+         <!-- Question 10 -->
+         <h2>10. Which tag is used for an unordered list?</h2>
+        <h3> <input type="radio" name="q10" value="A"> &lt;ul&gt;<br>
+         <input type="radio" name="q10" value="B"> &lt;li&gt;<br>
+         <input type="radio" name="q10" value="C"> &lt;ol&gt;<br></h3>
+
+         <!-- Buttons -->
+         <br>
+         <button type="button" onclick="submitQuiz()">Submit</button>
+         <button type="button" onclick="retakeQuiz()">Retake</button>
+      </form>
+
+      <!-- Result Display -->
+      <div id="result"></div>
+   </section>
+
+   <!-- JavaScript -->
+   <script>
+      function submitQuiz() {
+         const answers = ["A", "B", "B", "B", "A", "B", "C", "A", "B", "A"];
+         let score = 0;
+
+         for (let i = 1; i <= 10; i++) {
+            const selected = document.querySelector(`input[name="q${i}"]:checked`);
+            if (selected && selected.value === answers[i - 1]) {
+               score++;
+            }
+         }
+
+         document.getElementById("result").innerHTML = `You scored ${score} out of 10!`;
+      }
+
+      function retakeQuiz() {
+         document.getElementById("quiz-form").reset();
+         document.getElementById("result").innerHTML = "";
+      }
+   </script>
+   <script src="js/script.js"></script>
+
+</body>
+</html>
